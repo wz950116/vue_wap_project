@@ -1,0 +1,59 @@
+@import '../../assets/css/font-family.less';
+.t-m-done {
+    overflow: hidden;
+    .t-item {
+        width: 9.47rem;
+        height: 2.93rem;
+        margin: 0 auto .13rem;
+        overflow: hidden;
+        &-box {
+            width: 9.2rem;
+            height: 2.67rem;
+            margin: .13rem auto;
+        }
+    }
+    .item-main {
+        position: relative;
+        margin-left: 2.41rem;
+        height: 100%;
+        text-align: left;
+        overflow: hidden;
+        &-title {
+            margin: 0.55rem 0 0.4rem 0;
+            .bolderFont;
+            font-weight: bolder;
+            font-size: 0.43rem;
+            color: #333333;
+        }
+        &-sub {
+            margin-bottom: .13rem;
+            font-size: 0.29rem;
+            line-height: 0.32rem;
+            color: #999999;
+            &__dot {
+                display: block;
+                float: left;
+                margin: .12rem .08rem .12rem 0;
+                width: .08rem;
+                height: .08rem;
+                background: #D8D8D8;
+                border-radius: 50%;
+            }
+            &__text {
+                // display: block;
+                width: 6rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .bg-red-done {
+        background: url('../../../static/img/bg-card-red-done@2x.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+    .bg-gift-done {
+        background: url('../../../static/img/bg-card-gift-done@2x.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+}

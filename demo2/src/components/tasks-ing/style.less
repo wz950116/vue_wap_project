@@ -1,0 +1,99 @@
+@import '../../assets/css/font-family.less';
+.t-m-ing {
+    overflow: hidden;
+    .t-item {
+        width: 9.47rem;
+        height: 2.93rem;
+        margin: 0 auto .13rem;
+        overflow: hidden;
+        &-box {
+            width: 9.2rem;
+            height: 2.67rem;
+            margin: .13rem auto;
+        }
+    }
+    .item-main {
+        position: relative;
+        margin-left: 2.41rem;
+        height: 100%;
+        text-align: left;
+        overflow: hidden;
+        &-title {
+            margin: 0.37rem 0 0.27rem 0;
+            .bolderFont;
+            font-weight: bolder;
+            font-size: 0.43rem;
+            color: #333333;
+        }
+        &-sub {
+            margin-bottom: .13rem;
+            font-size: 0.29rem;
+            line-height: 0.32rem;
+            color: #999999;
+            &__dot {
+                display: block;
+                float: left;
+                margin: .12rem .08rem .12rem 0;
+                width: .08rem;
+                height: .08rem;
+                background: #D8D8D8;
+                border-radius: 50%;
+            }
+            &__text {
+                // display: block;
+                width: 6rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        &-sub:last-of-type {
+            margin-bottom: .23rem;
+        }
+        &-rate {
+            &__bg {
+                margin-right: .13rem;
+                width: 3.2rem;
+                height: 0.27rem;
+                background: #FDECEA;
+                border-radius: 0.14rem;
+                float: left;
+                .progress-bar {
+                    width: 0;
+                    height: 100%;
+                    background: -webkit-gradient(linear, right top, left top, from(rgba(255, 133, 80, 1)), to(rgba(255, 81, 57, 1)));
+                    background: linear-gradient(-90deg, rgba(255, 133, 80, 1), rgba(255, 81, 57, 1));
+                    border-radius: 0.14rem;
+                    -webkit-transition: all 0.8s ease;
+                    transition: all 0.8s ease;
+                }
+            }
+            &__text {
+                float: left;
+                margin-top: -0.05rem;
+                font-size: 0.29rem;
+                color: #999999;
+            }
+        }
+        &-tag {
+            position: absolute;
+            top: 0.37rem;
+            right: 0.48rem;
+            width: 1.73rem;
+            height: 0.53rem;
+            font-size: 0.32rem;
+            color: #FFFFFF;
+            line-height: 0.54rem;
+            border-radius: 0.3rem;
+            text-align: center;
+            background: -webkit-gradient(linear, right top, left top, from(rgba(255, 139, 83, 1)), to(rgba(255, 81, 56, 1)));
+            background: linear-gradient(-90deg, rgba(255, 139, 83, 1), rgba(255, 81, 56, 1));
+            -webkit-box-shadow: 0 0.03rem 0.05rem 0 rgba(255, 130, 78, 0.3);
+            box-shadow: 0 0.03rem 0.05rem 0 rgba(255, 130, 78, 0.3);
+        }
+    }
+    .bg-red-ing {
+        background: url('../../../static/img/bg-card-red-ing@2x.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="描述">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>我的卡券</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript">
+        document.body.addEventListener('touchstart', function() {});
+        /////////////////////////////////////////////////////////////////////////
+        ////////Safari设置user-scalable=no仍然可以缩放////解决方案///////////////////
+        document.documentElement.addEventListener('touchstart', function(event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, false);
+        var lastTouchEnd = 0;
+        document.documentElement.addEventListener('touchend', function(event) {
+            var now = Date.now();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+        ////////Safari设置user-scalable=no仍然可以缩放////解决方案///////////////////
+        /////////////////////////////////////////////////////////////////////////
+        window.domainRes = './'
+        window.env = '-dev'
+    </script>
+  </body>
+</html>
